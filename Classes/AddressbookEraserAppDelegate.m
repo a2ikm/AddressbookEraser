@@ -13,13 +13,13 @@
 
 @synthesize window, indicator;
 
-- (IBAction)removeAllRecords:(id)sender {
+- (IBAction)sartErase:(id)sender {
 	[indicator startAnimating];
-	[self remove];
+	[self eraseAllRecords];
 	[indicator stopAnimating];
 }
 
-- (void)remove {
+- (void)eraseAllRecords {
 	ABAddressBookRef addressBook = ABAddressBookCreate();
 	
 	CFArrayRef people = ABAddressBookCopyArrayOfAllPeople(addressBook);

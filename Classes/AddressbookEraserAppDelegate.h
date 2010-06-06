@@ -16,8 +16,8 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *indicator;
 
-- (IBAction)removeAllRecords:(id)sender;
-- (void)remove;
+- (IBAction)startErase:(id)sender;
+- (void)eraseAllRecords;
 
 
 @end
