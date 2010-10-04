@@ -13,7 +13,7 @@
 
 @synthesize window, indicator;
 
-- (IBAction)sartErase:(id)sender {
+- (IBAction)startErase:(id)sender {
 	[indicator startAnimating];
 	[self eraseAllRecords];
 	[indicator stopAnimating];
